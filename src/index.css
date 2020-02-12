@@ -2,26 +2,70 @@ body{
     background-color: #34495e;
 }
 
-h1{
+/* h1{
     color : #3498db;
     transition : color 0.5s ease-in-out;
-}  
+}   */
 
 .clicked{
     color : #ecf0f1;
 }
 
-.btn{
-    background-color: red;
-}
-
 .form,
 .greetings{
     display: none;
+    color : white;
+    text-align: center;
+    font-size: 60px;
+    margin: auto;
+    margin-top: -100px;
+    font-style: bold;
 }
+
+.btn{
+    float:right;
+}
+
+.todo-title{
+    color : white;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+}
+
+.todo-form{
+    color : white;
+    text-align: center;
+    margin: auto;
+}
+
+.todo-list{
+    color : white;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+
+.todo-input{
+    width: 40%;
+    border: none;
+    background: none;
+    margin: auto;
+    font-size: 20px;
+    color : white;
+    text-align: center;
+    border-bottom : 2px solid white;
+}
+
 
 .showing{
     display: block;
+}
+
+.clock{
+    font-size: 70px;
+    color : white;
+    text-align: center;
 }
 
 .bgImage{
@@ -41,4 +85,10 @@ h1{
     to{
         opacity: 1;
     }
+}
+
+.weather{
+    line-height: 80%;
+    text-align: right;
+    color : white;
 }

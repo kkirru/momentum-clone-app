@@ -13,7 +13,12 @@ function init() {
 init();
 
 function handleSubmit(event) {
+    console.log("submit");
     event.preventDefault();
+    if (toDoInput.value === null || toDoInput.value === "") {
+        console.log("null");
+        return;
+    }
     paintToDo(toDoInput.value);
     toDoInput.value = "";
 }

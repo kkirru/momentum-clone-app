@@ -8,33 +8,38 @@
 </head>
 
 <body class="body">
+  <!-- weather -->
+  <span class="js-weather weather">
+  </span>
   <!-- clock -->
-  <div class="js-clock">
+  <div class="js-clock clock">
     <h1>00:00:00</h1>
   </div>
 
   <!-- greetings -->
-    <form class="js-form form">
-      <input type="text" placeholder="what is your name?">
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <button class="js-rename-btn">rename</button>
+  <form class="js-form form">
+    <input type="text" placeholder="what is your name?">
+  </form>
+  <div>
+    <h1 class="js-greetings greetings">welcome</h1>
+    <!-- <button class="js-rename-btn btn">rename</button> -->
+  </div>
+  </div>
   <!-- Todo -->
-    <form class="js-toDoForm">
-      <input type="text" placeholder="What is your main job today?">
+  <div>
+    <h2 class="todo-title">What is yout todo?</h2>
+    <form class="js-toDoForm todo-form">
+      <input class = "todo-input" type="text" placeholder="todo...">
     </form>
-    <h4 class="title">To do List</h4>
-    <ul class="js-toDoList"></ul>
-    <!-- weather -->
-    <span class="js-weather">
-      
-    </span>
+    <!-- <h4 class="title">To do List</h4> -->
+    <ul class="js-toDoList todo-list"></ul>
+  </div>
   <!-- script -->
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+  <script src="clock.js"></script>
+  <script src="greeting.js"></script>
+  <script src="todo.js"></script>
+  <script src="bg.js"></script>
+  <script src="weather.js"></script>
 </body>
 
 </html>

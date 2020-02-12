@@ -1,20 +1,20 @@
 const form = document.querySelector(".js-form"),
     input = form.querySelector("input"),
-    greetings = document.querySelector(".js-greetings"),
-    renameBtn = document.querySelector(".js-rename-btn");
+    greetings = document.querySelector(".js-greetings")
+// renameBtn = document.querySelector(".js-rename-btn");
 
 const USER_LS = "currentUser";
 const SHOWING_CN = "showing";
 
 function init() {
     loadName();
-    renameBtn.addEventListener("click", onClickRenameBtn);
+    // renameBtn.addEventListener("click", onClickRenameBtn);
 }
 
-function onClickRenameBtn() {
-    localStorage.removeItem(USER_LS);
-    loadName();
-}
+// function onClickRenameBtn() {
+//     localStorage.removeItem(USER_LS);
+//     loadName();
+// }
 
 function paintGreeting(currentUser) {
     form.classList.remove(SHOWING_CN);
@@ -31,6 +31,7 @@ function handleSubmit(event) {
 function askName() {
     greetings.classList.remove(SHOWING_CN);
     form.classList.add(SHOWING_CN);
+    // form.removeEventListener("submit");
     form.addEventListener("submit", handleSubmit);
 }
 

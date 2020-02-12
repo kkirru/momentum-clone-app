@@ -27,9 +27,14 @@ function getWeather(lat, lon) {
     }
     ).then(
         json => {
-            const temp = json.main.temp;
+            const temp = Math.floor(json.main.temp);
             const place = json.name;
-            weatherContainer.innerText = temp + place;
+            const temp_txt = document.createElement("h1");
+            temp_txt.innerText = temp + "˚"
+            const place_txt = document.createElement("p");
+            place_txt.innerText = place;
+            weatherContainer.appendChild(temp_txt);
+            weatherContainer.appendChild(place_txt);
         }
     )
 
